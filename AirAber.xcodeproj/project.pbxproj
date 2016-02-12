@@ -18,6 +18,7 @@
 		355C6E731BBDA3CE00FD244B /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C6E721BBDA3CE00FD244B /* FlightInterfaceController.swift */; };
 		3F0C3A041C6D0E7200485009 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C3A031C6D0E6600485009 /* FlightRowController.swift */; };
 		3F0C3A251C6D4FB900485009 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C3A231C6D4FAF00485009 /* CheckInInterfaceController.swift */; };
+		3F0C3A271C6D6E1E00485009 /* BoardingPassInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C3A261C6D6E1E00485009 /* BoardingPassInterfaceController.swift */; };
 		3F890C071C6CED9E00FC961D /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F890C051C6CDBC100FC961D /* ScheduleInterfaceController.swift */; };
 		7B8FA23D1B72275A00B1E765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */; };
 		7B8FA23F1B72275A00B1E765 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA23E1B72275A00B1E765 /* ViewController.swift */; };
@@ -85,6 +86,7 @@
 		3F0C3A021C6D0E6600485009 /* Watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Watch-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F0C3A031C6D0E6600485009 /* FlightRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlightRowController.swift; path = ../Watch/FlightRowController.swift; sourceTree = "<group>"; };
 		3F0C3A231C6D4FAF00485009 /* CheckInInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckInInterfaceController.swift; path = ../Watch/CheckInInterfaceController.swift; sourceTree = "<group>"; };
+		3F0C3A261C6D6E1E00485009 /* BoardingPassInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassInterfaceController.swift; path = ../Watch/BoardingPassInterfaceController.swift; sourceTree = "<group>"; };
 		3F890C051C6CDBC100FC961D /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleInterfaceController.swift; path = ../Watch/ScheduleInterfaceController.swift; sourceTree = "<group>"; };
 		7B8FA2391B72275A00B1E765 /* AirAber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8FA23C1B72275A00B1E765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		355C6E5E1BBD9B8400FD244B /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3F0C3A261C6D6E1E00485009 /* BoardingPassInterfaceController.swift */,
 				3F0C3A231C6D4FAF00485009 /* CheckInInterfaceController.swift */,
 				3F0C3A031C6D0E6600485009 /* FlightRowController.swift */,
 				3F890C051C6CDBC100FC961D /* ScheduleInterfaceController.swift */,
@@ -274,6 +277,7 @@
 					};
 					355C6E591BBD9B8400FD244B = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = DJE44ZPPJW;
 					};
 					7B8FA2381B72275A00B1E765 = {
 						CreatedOnToolsVersion = 7.0;
@@ -343,6 +347,7 @@
 				3F890C071C6CED9E00FC961D /* ScheduleInterfaceController.swift in Sources */,
 				3F0C3A041C6D0E7200485009 /* FlightRowController.swift in Sources */,
 				355C6E711BBD9DAB00FD244B /* Flight.swift in Sources */,
+				3F0C3A271C6D6E1E00485009 /* BoardingPassInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,10 +448,13 @@
 		355C6E6B1BBD9B8400FD244B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.micpringle.AirAber.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -457,10 +465,13 @@
 		355C6E6C1BBD9B8400FD244B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.micpringle.AirAber.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

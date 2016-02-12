@@ -103,6 +103,36 @@
             </objects>
             <point key="canvasLocation" x="477" y="730"/>
         </scene>
+        <!--BoardingPass-->
+        <scene sceneID="aLu-bN-e0t">
+            <objects>
+                <controller identifier="BoardingPass" id="ddK-tq-HCD" customClass="BoardingPassInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group height="30" alignment="center" spacing="4" id="es5-IS-bny">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="MAN" id="B8Z-rH-EKu">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                </label>
+                                <imageView width="24" height="20" alignment="left" verticalAlignment="center" image="Plane" id="pjO-Hd-LE2">
+                                    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="SFO" id="Hru-5G-2SB">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView width="66" height="66" alignment="center" verticalAlignment="center" image="Activity" animationDuration="1" id="ir1-dJ-pgC"/>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="6" bottom="0.0"/>
+                    <connections>
+                        <outlet property="boardingPassImage" destination="ir1-dJ-pgC" id="ayW-VQ-I1L"/>
+                        <outlet property="destinationLabel" destination="Hru-5G-2SB" id="SGA-7K-hSK"/>
+                        <outlet property="originLabel" destination="B8Z-rH-EKu" id="Os7-oR-kal"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="477" y="973"/>
+        </scene>
         <!--AirUber-->
         <scene sceneID="weW-cQ-Isp">
             <objects>
